@@ -1,0 +1,28 @@
+<div class="corner-right">
+    <div class="d-flex justify-content-center mt-4 w-100">
+        <a href="/auth/registration" class="btn btn-primary">Register</a>
+    </div>
+</div>
+<div class="corner-left">
+    <div class="d-flex justify-content-center mt-4 w-100">
+        <a href="/">Back To The Site</a>
+    </div>
+</div>
+<div class="col-xs-12 d-flex justify-content-center vh-100">
+    <div class="row align-self-center">
+        <h2 class="text-center">Login</h2>
+        <form action="/auth/login" method="POST">
+            <div class="m-4">
+                <label class="form-label fw-bold font-monospace m-2">Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Your username" required>
+            </div>
+            <div class="m-4">
+                <label class="form-label fw-bold font-monospace m-2">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Your password" required>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

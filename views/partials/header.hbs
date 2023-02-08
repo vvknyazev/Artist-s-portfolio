@@ -1,0 +1,47 @@
+<div class="header" id="header">
+
+    <div class="menu">
+        <div class="menu-active">
+            <div class="menu__title">
+                {{#if user}}
+                    <ul class="nav">
+                        <li class="nav-item hello"><h2 >Hello, {{user.username}}</h2></li>
+                        <li class="nav-item logout"><a href="/auth/logout">Log Out</a></li>
+                    </ul>
+
+                {{else}}
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link auth-btn" href="/auth/registration">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link auth-btn" href="/auth/login">Login</a>
+                        </li>
+                    </ul>
+
+                {{/if}}
+
+            </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="#header" class="menu-items__link">Home</a></li>
+                    <li><a href="#works" class="menu-items__link">Works</a></li>
+                    <li><a href="#about" class="menu-items__link">About</a></li>
+                    <li><a href="#contact" class="menu-items__link">Contact</a></li>
+                    {{#if admin}}<li><a href="/create" class="special">Create</a></li>{{/if}}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div>
+            <h1 class="name">
+                <a>Mais Wath</a>
+                <br>
+                <p class="text-center mt-4">Artist`s portfolio</p>
+            </h1>
+        </div>
+    </div>
+</div>

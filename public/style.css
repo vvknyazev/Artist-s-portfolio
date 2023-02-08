@@ -1,0 +1,420 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(36, 35, 56, 1);
+    font-family: 'Poppins', sans-serif;
+}
+.img-box{
+    position: relative;
+    padding: 3px;
+    background-color: #7979be;
+}
+.close-btn{
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    padding: 5px 7px;
+    background-color: rgba(36, 35, 56, 1);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.delete-btn{
+    color: white;
+    transition: all ease 0.1s;
+}
+.close-btn:hover .delete-btn{
+    color: #c0c0c0;
+    transition: all ease 0.1s;
+}
+
+.demo-image {
+    width: 410px;
+    height: 410px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.header{
+    height: 100vh;
+}
+.artist{
+    width: 25%;
+    border-radius: 50px;
+}
+.name{
+    color: #E8442B;
+}
+.name a{
+    text-decoration: none;
+    font-size: 90px;
+    text-shadow: 0 0.5vmax 0 #1f3564;
+    letter-spacing: 0.01em;
+    line-height: 5vmax;
+    font-weight: bold;
+    font-family: 'Sevillana', cursive;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+}
+
+
+/*menu*/
+
+.logout{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+
+    margin-top: 3.5px;
+
+}
+.hello{
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+}
+.hello h2{
+    margin: 0;
+}
+.menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 35px;
+    z-index: 20;
+    transition: all ease 0.3s;
+}
+.menu-active{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._active {
+    background-color: rgba(36, 35, 56, 1);
+    transition: all ease 0.3s;
+    padding-block: 10px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.menu__title{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2.3px;
+    text-decoration: none;
+    font-family: 'Sevillana', cursive;
+}
+.nav-item{
+    margin-right: 15px;
+}
+.auth-btn{
+    background-color: rgba(255, 0, 0, 0.88) !important;
+    font-size: 25px;
+    color: white !important;
+}
+.auth-btn:hover{
+    background-color: rgba(255, 0, 0, 0.71) !important;
+}
+
+.menu-items ul{
+    display: flex;
+    padding-left: 0;
+    padding-top: 14px;
+
+}
+
+.menu-items li {
+    list-style: none;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 5px 20px 5px 20px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-items__link {
+    position: relative;
+    font-size: 50px;
+}
+
+.menu-items__link:hover::before {
+    transform: scaleX(1);
+    transition: transform 0.5s;
+}
+
+.menu-items__link::before {
+    content: '';
+    width: 100%;
+    height: 5.5px;
+    padding: 0.5px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    transform-origin: left;
+    border-radius: 5px;
+}
+#works{
+    margin-top: 100px;
+}
+.work__title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.special{
+    background-color: white;
+    color: black !important;
+    padding: 10px 18px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+/*about*/
+
+
+.about{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.about__photo{
+    margin-right: 50px;
+}
+.about__photo img{
+    border-radius: 50%;
+    width: 80%;
+
+}
+.about__desc{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 80%;
+    font-size: 20px;
+}
+.about__desc h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about__desc p{
+    color: rgb(193, 193, 193);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*contact*/
+
+.contact {
+    padding-top: 5%;
+    height: 100vh;
+    background-color: rgba(36, 35, 56, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-title h3 {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-title h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 200px 0 200px;
+}
+
+.contact-left {
+    flex: 1;
+    flex-direction: column;
+    height: 70vh;
+
+}
+
+.find-me {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.find-me__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30%;
+    width: 85%;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 15px;
+    background: #0000006f;
+    transition: all ease 0.5s;
+}
+
+.find-me__item a i {
+    color: red;
+    font-size: 45px;
+    margin: 15px;
+}
+
+.find-me__item a {
+    text-align: center;
+}
+
+.find-me__item:hover {
+    transition: all ease 0.5s;
+    transform: scale(1.04);
+}
+
+.contact-right {
+    flex: 2;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 7px;
+    background: #0000006f;
+    outline: none;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+form .btn {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: #fff;
+    padding: 15px 60px;
+    font-size: 18px;
+    margin-top: 45px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border: none;
+}
+
+form .btn:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.footer {
+    margin-top: 10%;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.copyright {
+    text-align: center;
+    color: rgb(208, 208, 208);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+#msg {
+    color: green;
+    display: block;
+    margin-top: -85px;
+    margin-left: 15px;
+}
+.find-me__item a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color: red;
+    padding: 12px 20px 12px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.auth-message{
+    width: 35%;
+    margin: 20px auto;
+}
+.corner-right{
+    position: absolute;
+    right: 3%;
+}
+.corner-right .btn {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border: none;
+}
+
+.corner-right .btn:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.corner-left{
+    position: absolute;
+    left: 3%;
+    top: 1.5%;
+}
+.corner-left a{
+    color: rgba(255, 255, 255, 0.7);
+    transition: all ease 0.3s;
+}
+.corner-left a:hover{
+    color: rgb(255, 255, 255);
+    transition: all ease 0.3s;
+}
+.reg-message{
+    position: absolute;
+    height: 40px;
+    background-color: rgb(0, 128, 0);
+    z-index: 10;
+    width: 20%;
+    left: 40%;
+    border-radius: 4px;
+    border: 2px solid black;
+    transition: 0.5s all ease;
+    top: -100%;
+}
+.reg-message_active{
+    top: 0;
+    transition: 0.5s all ease;
+}
